@@ -3,14 +3,15 @@ const pokemon={"charmander":{"abilities": [    {"name":"blaze"},    {"name":"sol
 const nm=document.getElementsByTagName("h1")[0]
 const type=document.getElementsByClassName("types")[0]
 const abils=document.getElementsByClassName("abilities")[0]
-
+const sts=document.getElementsByClassName("stats")[0]
 
 
 const typecolors={"fire":"rgb(255,0,0)","flying":"rgb(125,125,255"}
-
+const statcolors={"speed":"rgb(225,225,055)","attack":"rgb(205,105,105)","hp":"rgb(255,0,0)","defense":"rgb(105,105,105)","special-attack":"rgb(225,155,155)","special-defense":"rgb(55,55,55)"}
 function loadPokemon(name){
     while(type.children.length!=0){type.removeChild(type.children[0])}
     while(abils.children.length!=0){abils.removeChild(abils.children[0])}
+    while(sts.children.length!=0){sts.removeChild(sts.children[0])}
     let poke=pokemon[name]
     //do the name
     nm.innerHTML=poke.name
@@ -34,7 +35,14 @@ function loadPokemon(name){
     //id
 
     //stats
-
+    for(let stat of poke.stats){
+        console.log(stat)
+        let tp=document.createElement("div")
+        tp.style.backgroundColor=statcolors[stat.stat.name]
+        tp.style.textAlign="center"
+        tp.innerHTML=stat.stat.name+"<br>"+stat.base_stat
+        sts.appendChild(tp)
+    }
     //load the image now
 }
 
