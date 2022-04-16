@@ -27,7 +27,7 @@ function loadPokemon(name){
     }
     //then abilities
     for(let abilit of poke.abilities){
-        console.log(abilit)
+        
         let placeholder=document.createElement("div")
         placeholder.style.backgroundColor="rgb(225,225,125)"
         placeholder.innerHTML=abilit.name
@@ -41,7 +41,7 @@ function loadPokemon(name){
     id.innerHTML="ID:<br>"+poke.id
     //stats
     for(let stat of poke.stats){
-        console.log(stat)
+        
         let placeholder=document.createElement("div")
         placeholder.style.backgroundColor=statColors[stat.stat.name]
         placeholder.style.textAlign="center"

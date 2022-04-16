@@ -4,11 +4,15 @@ card inside a div
 divs for the content sections
 bottom-most div, you choose id, but it will hold the stat colors
 */
-
+*{
+  font-size: 2.5vmin;
+}
 body {
   background-color: black;
-  color: black;
-  section {
+  color: rgb(245, 140, 140);
+  .card {
+    
+    max-width: 45vmin;
     background-color: tan;
     div {
       display: flex;
@@ -19,8 +23,28 @@ body {
         flex-direction: row;
       }
       .types {
+        min-width: 87.5%;
+        max-width: 87.5%;
+        align-self: center;
+        &::before{
+          content:'';
+          min-width: 100%;
+          min-height: 3vmin;
+        }
+        &::after{
+          content:"TYPES:";
+          color:black;
+          margin:0;
+          padding:0;
+          position:absolute;
+        }
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
+        background-color:darkgray ;
+        div{
+          color:black
+        }
       }
       .types,
       .abilities,
@@ -28,10 +52,53 @@ body {
       .smaller {
         div {
           min-width: 12.5%;
+          color:black
+        }
+      }
+      .stats{
+        display:flex;
+        flex-wrap: wrap;
+        div{
+          min-width: calc(100%/3);
+          max-height: fit-content;
+          flex: 2 2 0;
+          color:black;
+        }
+      }
+      .abilities{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: aliceblue;
+        &::before{
+          content: 'ABILITIES:';
+          text-align: center;
+          color:black;
+          min-height: 3vmin;
+          min-width: 100%;
+        }
+        gap:5%;
+        flex:1 1 0;
+        div{
+          flex:1 1 0;
         }
       }
       .smaller {
+        border-width: 0.25vmin;
+        border-style: solid;
+        border-color: blanchedalmond;
+
+        max-width: 75%;
+        min-width: 75%;
+        display:flex;
+        align-self: center;
+        flex: 1 1 0;
+        gap:0% 2%;
         div {
+          flex: 1 1 0;
+          text-align: center;
+          flex-grow: 1;
+          min-height: 5vmin;
           background-color: white;
         }
       }
