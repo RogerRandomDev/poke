@@ -4,6 +4,8 @@ const nm=document.getElementsByTagName("h1")[0]
 const type=document.getElementsByClassName("types")[0]
 const abils=document.getElementsByClassName("abilities")[0]
 
+
+
 const typecolors={"fire":"rgb(255,0,0)","flying":"rgb(125,125,255"}
 
 function loadPokemon(name){
