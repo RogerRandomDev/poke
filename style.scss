@@ -5,8 +5,18 @@ divs for the content sections
 bottom-most div, you choose id, but it will hold the stat colors
 */
 body {
+  background-color: black;
+  color: whitesmoke;
   section {
     div {
+      display: flex;
+      justify-content: center;
+    }
+    img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
   }
 }
