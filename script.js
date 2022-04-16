@@ -4,6 +4,9 @@ const nome=document.getElementsByTagName("h1")[0]
 const type=document.getElementsByClassName("types")[0]
 const abilityes=document.getElementsByClassName("abilities")[0]
 const stats=document.getElementsByClassName("stats")[0]
+const id=document.getElementsByClassName("id")[0]
+const height=document.getElementsByClassName("height")[0]
+const weight=document.getElementsByClassName("weight")[0]
 
 
 const typeColors={"fire":"rgb(255,0,0)","flying":"rgb(125,125,255"}
@@ -31,9 +34,11 @@ function loadPokemon(name){
         abilityes.appendChild(placeholder)
     }
     //height
-
+    height.innerHTML="SIZE:<br>"+poke.height+"M"
+    //weight
+    weight.innerHTML="WEIGHT:<br>"+poke.weight+"Kg"
     //id
-
+    id.innerHTML="ID:<br>"+poke.id
     //stats
     for(let stat of poke.stats){
         console.log(stat)
