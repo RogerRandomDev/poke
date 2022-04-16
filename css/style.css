@@ -6,7 +6,11 @@ bottom-most div, you choose id, but it will hold the stat colors
 */
 body {
   background-color: black;
-  color: whitesmoke;
+  color: black;
+}
+
+body section {
+  background-color: tan;
 }
 
 body section div {
@@ -15,12 +19,33 @@ body section div {
   flex-direction: column;
 }
 
+body section div div {
+  display: flex;
+  flex-direction: row;
+}
+
+body section div .types {
+  display: flex;
+  flex-direction: row;
+}
+
+body section div .types div,
+body section div .abilities div,
+body section div .stats div,
+body section div .smaller div {
+  min-width: 12.5%;
+}
+
+body section div .smaller div {
+  background-color: white;
+}
+
 img {
   display: flex;
+  max-width: 50vmin;
+  max-height: 50vmin;
   align-items: center;
   justify-content: center;
   text-align: center;
-  max-width: 50vmin;
-  max-height: 50vmin;
 }
 /*# sourceMappingURL=style.css.map */
