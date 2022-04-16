@@ -4,4 +4,20 @@ card inside a div
 divs for the content sections
 bottom-most div, you choose id, but it will hold the stat colors
 */
+body {
+  background-color: black;
+  color: whitesmoke;
+}
+
+body section div {
+  display: flex;
+  justify-content: center;
+}
+
+body section img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
