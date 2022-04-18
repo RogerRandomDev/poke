@@ -1,0 +1,185 @@
+/*
+section for the card
+card inside a div
+divs for the content sections
+bottom-most div, you choose id, but it will hold the stat colors
+*/
+* {
+  font-size: 2.5vmin;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body {
+  background-color: black;
+  color: #eb3c3c;
+}
+
+body .card {
+  max-width: 45vmin;
+  background-color: tan;
+}
+
+body .card div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .card div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body .card div .types {
+  min-width: 87.5%;
+  max-width: 87.5%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: darkgray;
+}
+
+body .card div .types::before {
+  content: '';
+  min-width: 100%;
+  min-height: 3vmin;
+}
+
+body .card div .types::after {
+  content: "TYPES:";
+  color: black;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+body .card div .types div {
+  color: black;
+}
+
+body .card div .types div,
+body .card div .abilities div,
+body .card div .stats div,
+body .card div .smaller div {
+  min-width: 12.5%;
+  color: black;
+}
+
+body .card div .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .card div .stats div {
+  min-width: calc(100%/3);
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 2 0px;
+          flex: 2 2 0;
+  color: black;
+}
+
+body .card div .abilities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: aliceblue;
+  gap: 5%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+body .card div .abilities::before {
+  content: 'ABILITIES:';
+  text-align: center;
+  color: black;
+  min-height: 3vmin;
+  min-width: 100%;
+}
+
+body .card div .abilities div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+}
+
+body .card div .smaller {
+  border-width: 0.25vmin;
+  border-style: solid;
+  border-color: blanchedalmond;
+  max-width: 75%;
+  min-width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  gap: 0% 2%;
+}
+
+body .card div .smaller div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  text-align: center;
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  min-height: 5vmin;
+  background-color: white;
+}
+
+img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 50vmin;
+  max-height: 50vmin;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

@@ -6,10 +6,13 @@ bottom-most div, you choose id, but it will hold the stat colors
 */
 *{
   font-size: 2.5vmin;
+  display: flex;
+  justify-content: center;
 }
 body {
   background-color: black;
-  color: rgb(245, 140, 140);
+  color: rgb(235, 60, 60);
+  
   .card {
     
     max-width: 45vmin;
