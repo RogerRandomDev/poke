@@ -49,6 +49,7 @@ function loadPokemon(name){
         stats.appendChild(placeholder)
     }
     //load the image now
+    document.getElementById("cardImage").src="./images/"+name+".png"
 }
 
 
