@@ -9,33 +9,48 @@ bottom-most div, you choose id, but it will hold the stat colors
   display: flex;
   justify-content: center;
 }
+
 body {
   background-color: black;
-  color: rgb(235, 60, 60);
-
+  color: rgb(44, 6, 6);
   flex-direction: column;
+  color: rgba(192, 31, 45, 0.952);
   .card {
     max-width: 45vmin;
-    background-color: tan;
+    border-radius: 0.7vmin;
+    border-style: solid;
+    border-color: orange;
+    h1 {
+      font-weight: 1000;
+    }
     div {
       display: flex;
       justify-content: center;
       flex-direction: column;
+      background-color: orange;
+      .border {
+        border-radius: 2.5vmin;
+        border-style: solid;
+        border-color: orange;
+      }
       div {
         display: flex;
         flex-direction: row;
       }
       .types {
+        border-radius: 2.5vmin;
+        border-style: solid;
+        border-color: orange;
         min-width: 87.5%;
         max-width: 87.5%;
         align-self: center;
         &::before {
-          content: '';
+          content: "";
           min-width: 100%;
           min-height: 3vmin;
         }
         &::after {
-          content: 'TYPES:';
+          content: "TYPES:";
           color: black;
           margin: 0;
           padding: 0;
@@ -45,6 +60,7 @@ body {
         flex-wrap: wrap;
         flex-direction: row;
         background-color: darkgray;
+
         div {
           color: black;
         }
@@ -62,6 +78,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         div {
+          font-weight: 700;
           min-width: calc(100% / 3);
           max-height: fit-content;
           flex: 2 2 0;
@@ -72,9 +89,10 @@ body {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        background-color: aliceblue;
+
+        background-color: gold;
         &::before {
-          content: 'ABILITIES:';
+          content: "ABILITIES:";
           text-align: center;
           color: black;
           min-height: 3vmin;
@@ -90,7 +108,9 @@ body {
         border-width: 0.25vmin;
         border-style: solid;
         border-color: blanchedalmond;
-
+        border-radius: 0.7vmin;
+        border-style: solid;
+        border-color: orange;
         max-width: 75%;
         min-width: 75%;
         display: flex;
@@ -103,6 +123,9 @@ body {
           flex-grow: 1;
           min-height: 5vmin;
           background-color: white;
+          border-radius: 1.9vmin;
+          border-style: solid;
+          border-color: orange;
         }
       }
     }

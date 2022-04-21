@@ -10,7 +10,17 @@ const weight=document.getElementsByClassName("weight")[0]
 
 
 const typeColors={"fire":"rgb(255,0,0)","flying":"rgb(125,125,255"}
-const statColors={"speed":"rgb(225,225,055)","attack":"rgb(205,105,105)","hp":"rgb(255,0,0)","defense":"rgb(105,105,105)","special-attack":"rgb(225,155,155)","special-defense":"rgb(55,55,55)"}
+const statColors={
+    "speed":"rgb(20, 161, 7, 0.952)",
+    "attack":"rgb(141, 74, 228, 0.952)",
+    "hp":"rgb(255,0,0)",
+    "defense":"rgb(101, 116, 122)",
+    "special-attack":"rgb(192, 31, 45, 0.952)",
+    "special-defense":"rgb(18, 87, 236, 0.952)"}
+const abilityColors={
+    "blaze":"rgb(209, 106, 10)",
+    "solar-power":"rgb(27, 99, 21)"
+}
 function loadPokemon(name){
     while(type.children.length!=0){type.removeChild(type.children[0])}
     while(abilityes.children.length!=0){abilityes.removeChild(abilityes.children[0])}
@@ -26,11 +36,11 @@ function loadPokemon(name){
         type.appendChild(placeholder)
     }
     //then abilities
-    for(let abilit of poke.abilities){
+    for(let ability2 of poke.abilities){
         
         let placeholder=document.createElement("div")
-        placeholder.style.backgroundColor="rgb(225,225,125)"
-        placeholder.innerHTML=abilit.name
+        placeholder.style.backgroundColor=abilityColors[ability2.name]
+        placeholder.innerHTML=ability2.name
         abilityes.appendChild(placeholder)
     }
     //height
