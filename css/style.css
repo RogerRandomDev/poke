@@ -81,6 +81,8 @@ body .card div .types div,
 body .card div .abilities div,
 body .card div .stats div,
 body .card div .smaller div {
+  border-style: solid;
+  border-color: black;
   min-width: 12.5%;
   color: black;
 }

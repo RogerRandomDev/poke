@@ -70,6 +70,8 @@ body {
       .stats,
       .smaller {
         div {
+          border-style: solid;
+          border-color: black;
           min-width: 12.5%;
           color: black;
         }
